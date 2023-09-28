@@ -1,36 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 body{
-    background-color: bisque;
-    background-image: url("./images/Background.jpg");
-    color: rgb(0, 255, 255);
+    min-height: 100vh;
+    background-image: url("./images/Background2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-a{
-    color: coral;
-    font-size: xx-large;    
-}
-
-.topBar{
-    border: solid 2px black;
-}
-
-#restTitle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
-}
-
-#navBar{
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 100px;
+    background: transparent;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navBar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navBar a::before{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+    
+.navBar a:hover::before{
+    width: 100%;
 }
 
 #menuElement{
-    display: grid;
-    place-items: center;
-    height: 80vh; /* Adjust the height as needed */
+    display: flex;
 }
 
-#addressElement{
-    display: grid;
-    place-items: center;
-    height: 1vh; /* Adjust the height as needed */
-}
