@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    background-image: url("./images/Background.jpg");
+    color: rgb(0, 255, 255);
+}
+
+a{
+    color: coral;
+    font-size: xx-large;    
+}
+
+.topBar{
+    border: solid 2px black;
+}
+
+#restTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+#navBar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menuElement{
+    display: grid;
+    place-items: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+#addressElement{
+    display: grid;
+    place-items: center;
+    height: 1vh; /* Adjust the height as needed */
+}
